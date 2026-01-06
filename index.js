@@ -57,3 +57,29 @@ let price2 = 12;
 
 output = `Total price is: ${price1 + price2} rupees`; //template literals use backticks (`)
 console.log(output);
+
+for (let i in student) {
+  console.log(i); //prints key of object
+  console.log(student[i]); //prints values of key
+}
+
+for (i of name) {
+  console.log(i);
+}
+
+//print all even numbers from 0-100
+
+// for (i = 0; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     console.log("even num =", i);
+//   }
+// }
+
+//create a guessing game
+
+let guess = 7;
+let userGuess = prompt("Guess a number between 1-10");
+while (userGuess != guess) {
+  userGuess = prompt("You guessed the wrong number, Guess again!");
+}
+console.log("You guessed the number.");
