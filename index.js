@@ -98,12 +98,25 @@
 
 // // ask user for full name and create a username for the user
 
-let fullName = prompt("Enter your full name:");
-fullName = fullName.replaceAll(" ", "");
-let length = fullName.length;
-let initial = "@";
+// let fullName = prompt("Enter your full name:");
+// fullName = fullName.replaceAll(" ", "");
+// let length = fullName.length;
+// let initial = "@";
 
-let userName = `Your username is ${
-  initial.concat(fullName.toLowerCase()) + length
-}`;
-console.log(userName);
+// let userName = `Your username is ${
+//   initial.concat(fullName.toLowerCase()) + length
+// }`;
+// console.log(userName);
+
+// // find average marks of entire class of students -> [85, 97, 44, 37, 76, 60]
+
+let marks = [85, 97, 44, 37, 76, 60];
+let sum = 0;
+let avg = 0;
+for (i of marks) {
+  sum = sum + i;
+}
+
+avg = sum / marks.length;
+console.log(`Average marks of ${marks.length} students is ${avg}`);
+marks;
