@@ -110,13 +110,28 @@
 
 // // find average marks of entire class of students -> [85, 97, 44, 37, 76, 60]
 
-let marks = [85, 97, 44, 37, 76, 60];
-let sum = 0;
-let avg = 0;
-for (i of marks) {
-  sum = sum + i;
-}
+// let marks = [85, 97, 44, 37, 76, 60];
+// let sum = 0;
+// let avg = 0;
+// for (i of marks) {
+//   sum = sum + i;
+// }
 
-avg = sum / marks.length;
-console.log(`Average marks of ${marks.length} students is ${avg}`);
-marks;
+// avg = sum / marks.length;
+// console.log(`Average marks of ${marks.length} students is ${avg}`);
+// marks;
+
+//
+//
+//
+// // price of items [250, 645, 300, 900, 50]. apply 10% off on all items
+
+let price = [250, 645, 300, 900, 50];
+let i = 0;
+console.log(`Initial price = ${price}`);
+for (let val of price) {
+  let off = val / 10;
+  price[i] = val - off;
+  i++;
+}
+console.log(`The updated price is ${price}`);
