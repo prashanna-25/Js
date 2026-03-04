@@ -158,3 +158,6 @@ let heroes = marvelHeroes.concat(dcHeroes);
 console.log(
   `Marvel Heroes are ${marvelHeroes} Then DC Heroes are ${dcHeroes} and finally all of the Heroes are ${heroes}`,
 );
+console.log(marvelHeroes.slice(1, 3)); //slices index no 1 and 2. 3 is excluded
+marvelHeroes.splice(2, 0, "Black Panther");
+console.log(marvelHeroes);
