@@ -139,25 +139,44 @@
 // price.pop();
 // console.log(`The updated price after poping is ${price.toString}`);
 
-let marvelHeroes = [
-  "Thor",
-  "Ironman",
-  "Captain America",
-  "Hawkeye",
-  "Spiderman",
-];
-let dcHeroes = ["Superman", "Batman", "Aquaman", "Flash"];
+// let marvelHeroes = [
+//   "Thor",
+//   "Ironman",
+//   "Captain America",
+//   "Hawkeye",
+//   "Spiderman",
+// ];
+// let dcHeroes = ["Superman", "Batman", "Aquaman", "Flash"];
 
-marvelHeroes.unshift("Antman");
+// marvelHeroes.unshift("Antman");
 
-popped = dcHeroes.shift();
-dcHeroes.push(popped);
+// popped = dcHeroes.shift();
+// dcHeroes.push(popped);
 
-let heroes = marvelHeroes.concat(dcHeroes);
+// let heroes = marvelHeroes.concat(dcHeroes);
 
-console.log(
-  `Marvel Heroes are ${marvelHeroes} Then DC Heroes are ${dcHeroes} and finally all of the Heroes are ${heroes}`,
-);
-console.log(marvelHeroes.slice(1, 3)); //slices index no 1 and 2. 3 is excluded
-marvelHeroes.splice(2, 0, "Black Panther");
-console.log(marvelHeroes);
+// console.log(
+//   `Marvel Heroes are ${marvelHeroes} Then DC Heroes are ${dcHeroes} and finally all of the Heroes are ${heroes}`,
+// );
+// console.log(marvelHeroes.slice(1, 3)); //slices index no 1 and 2. 3 is excluded
+// marvelHeroes.splice(2, 0, "Black Panther");
+// console.log(marvelHeroes);
+
+//
+//
+// Practice arr=["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+
+let arr = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log(arr);
+
+// remove first company
+arr.shift();
+console.log(arr);
+
+//remove uber and add Ola
+arr.splice(2, 1, "Ola");
+console.log(arr);
+
+//add Amaxon at end
+arr.push("Amazon");
+console.log(arr);
