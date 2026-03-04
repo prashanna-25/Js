@@ -126,15 +126,35 @@
 //
 // // price of items [250, 645, 300, 900, 50]. apply 10% off on all items
 
-let price = [250, 645, 300, 900, 50];
-let i = 0;
-price.push(45); //array push
-console.log(`Initial price = ${price}`);
-for (let val of price) {
-  let off = val / 10;
-  price[i] = val - off;
-  i++;
-}
-console.log(`The updated price is ${price}`);
-price.pop();
-console.log(`The updated price after poping is ${price.toString}`);
+// let price = [250, 645, 300, 900, 50];
+// let i = 0;
+// price.push(45); //array push
+// console.log(`Initial price = ${price}`);
+// for (let val of price) {
+//   let off = val / 10;
+//   price[i] = val - off;
+//   i++;
+// }
+// console.log(`The updated price is ${price}`);
+// price.pop();
+// console.log(`The updated price after poping is ${price.toString}`);
+
+let marvelHeroes = [
+  "Thor",
+  "Ironman",
+  "Captain America",
+  "Hawkeye",
+  "Spiderman",
+];
+let dcHeroes = ["Superman", "Batman", "Aquaman", "Flash"];
+
+marvelHeroes.unshift("Antman");
+
+popped = dcHeroes.shift();
+dcHeroes.push(popped);
+
+let heroes = marvelHeroes.concat(dcHeroes);
+
+console.log(
+  `Marvel Heroes are ${marvelHeroes} Then DC Heroes are ${dcHeroes} and finally all of the Heroes are ${heroes}`,
+);
