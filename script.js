@@ -128,6 +128,7 @@
 
 let price = [250, 645, 300, 900, 50];
 let i = 0;
+price.push(45); //array push
 console.log(`Initial price = ${price}`);
 for (let val of price) {
   let off = val / 10;
@@ -135,3 +136,5 @@ for (let val of price) {
   i++;
 }
 console.log(`The updated price is ${price}`);
+price.pop();
+console.log(`The updated price after poping is ${price.toString}`);
