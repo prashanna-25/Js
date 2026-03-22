@@ -162,21 +162,59 @@
 // marvelHeroes.splice(2, 0, "Black Panther");
 // console.log(marvelHeroes);
 
-//
-//
-// Practice arr=["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+// //
+// //
+// // Practice arr=["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
 
-let arr = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
-console.log(arr);
+// let arr = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// console.log(arr);
 
-// remove first company
-arr.shift();
-console.log(arr);
+// // remove first company
+// arr.shift();
+// console.log(arr);
 
-//remove uber and add Ola
-arr.splice(2, 1, "Ola");
-console.log(arr);
+// //remove uber and add Ola
+// arr.splice(2, 1, "Ola");
+// console.log(arr);
 
-//add Amaxon at end
-arr.push("Amazon");
-console.log(arr);
+// //add Amaxon at end
+// arr.push("Amazon");
+// console.log(arr);
+
+// //
+// //
+// //
+
+// function add(a, b) {
+//   s = a + b;
+//   return s;
+// }
+
+// let sum = add(5, 2);
+// console.log(sum);
+// console.log(s);
+
+// //
+// //
+// //
+
+function print(a, b) {
+  console.log(a, b);
+}
+
+// Write JS program to delete all occurrences of element 'num' in a given array.
+// Example : if arr = [1, 2, 3, 4, 5, 6, 2, 3] & num = 2
+// Result should be arr = [1, 3, 4, 5, 6, 3]
+
+let arr = [1, 2, 3, 4, 5, 6, 2, 3];
+let num = 2;
+print(arr);
+print("num = " + num);
+for (i = 0; i < arr.length; i++) {
+  print(i, arr[i]);
+  if (arr[i] == num) {
+    arr.splice(i, 1);
+    i--;
+  }
+}
+print(arr);
