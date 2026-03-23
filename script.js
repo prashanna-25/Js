@@ -202,19 +202,74 @@ function print(a, b) {
   console.log(a, b);
 }
 
-// Write JS program to delete all occurrences of element 'num' in a given array.
-// Example : if arr = [1, 2, 3, 4, 5, 6, 2, 3] & num = 2
-// Result should be arr = [1, 3, 4, 5, 6, 3]
+// // Write JS program to delete all occurrences of element 'num' in a given array.
+// // Example : if arr = [1, 2, 3, 4, 5, 6, 2, 3] & num = 2
+// // Result should be arr = [1, 3, 4, 5, 6, 3]
 
-let arr = [1, 2, 3, 4, 5, 6, 2, 3];
-let num = 2;
-print(arr);
-print("num = " + num);
-for (i = 0; i < arr.length; i++) {
-  print(i, arr[i]);
-  if (arr[i] == num) {
-    arr.splice(i, 1);
-    i--;
+// let arr = [1, 2, 3, 4, 5, 6, 2, 3];
+// let num = 2;
+// print(arr);
+// print("num = " + num);
+// for (i = 0; i < arr.length; i++) {
+//   print(i, arr[i]);
+//   if (arr[i] == num) {
+//     arr.splice(i, 1);
+//     i--;
+//   }
+// }
+// print(arr);
+
+// //
+// //
+// //
+
+// // Write a JS program to find the no of digits in a Number.
+// // Examole: if number = 287152, count = 6
+
+// let number = 287152;
+// let count = 0;
+
+// while (number > 0) {
+//   number = Math.floor(number / 10); //287152/10 = floor(28715.2) = 28715
+//   count++;
+// }
+
+// print(count);
+
+// //
+// //
+// //
+
+// // Write a JS program to find the sum of digits in a number
+// // Example: if number = 287152, sum = 25
+
+// let num = 287152;
+// let sum = 0;
+
+// while (num > 0) {
+//   sum += Math.floor(num % 10);
+//   num = Math.floor(num / 10);
+// }
+// print(sum);
+
+//
+//
+//
+
+//Print factorial of a number n.
+
+function fact(a) {
+  f = 1;
+  if (a === 0) {
+    return 1;
+  } else {
+    for (i = 1; i <= a; i++) {
+      f *= i;
+    }
+    return f;
   }
 }
-print(arr);
+
+let n = 7;
+print(n);
+print("Factorial of " + n + "=" + fact(n));
