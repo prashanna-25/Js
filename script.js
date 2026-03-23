@@ -252,24 +252,49 @@ function print(a, b) {
 // }
 // print(sum);
 
+// //
+// //
+// //
+
+// //Print factorial of a number n.
+
+// function fact(a) {
+//   f = 1;
+//   if (a === 0) {
+//     return 1;
+//   } else {
+//     for (i = 1; i <= a; i++) {
+//       f *= i;
+//     }
+//     return f;
+//   }
+// }
+
+// let n = 7;
+// print(n);
+// print("Factorial of " + n + "=" + fact(n));
+
 //
 //
 //
 
-//Print factorial of a number n.
+//Find largest number in an array with only positive numbers.
 
-function fact(a) {
-  f = 1;
-  if (a === 0) {
-    return 1;
-  } else {
-    for (i = 1; i <= a; i++) {
-      f *= i;
+function largest(a) {
+  max = 0;
+  for (i = 0; i < a.length; i++) {
+    if (a[i] > max) {
+      max = a[i];
+    } else {
+      continue;
     }
-    return f;
   }
+  return max;
 }
 
-let n = 7;
-print(n);
-print("Factorial of " + n + "=" + fact(n));
+let arr = [5, 23, 53, 3, 78, 59, 44];
+print(largest(arr));
+
+//
+//
+//
