@@ -274,27 +274,105 @@ function print(a, b) {
 // print(n);
 // print("Factorial of " + n + "=" + fact(n));
 
+// //
+// //
+// //
+
+// //Find largest number in an array with only positive numbers.
+
+// function largest(a) {
+//   max = 0;
+//   for (i = 0; i < a.length; i++) {
+//     if (a[i] > max) {
+//       max = a[i];
+//     } else {
+//       continue;
+//     }
+//   }
+//   return max;
+// }
+
+// let arr = [5, 23, 53, 3, 78, 59, 44];
+// print(largest(arr));
+
+// //
+// //
+// //
+
+// Object literals
+
+const student = {
+  name: "Prashanna",
+  age: 21,
+  address: "Nepal"
+};
+
+print(student);
+
+student.name = "Prashanna Khanal";  //values can be edited or added even if object is constant
+
+
+print (student);
+
 //
 //
 //
 
-//Find largest number in an array with only positive numbers.
+const obj = {
+  4: "a",
+  1: 'b'
+};
 
-function largest(a) {
-  max = 0;
-  for (i = 0; i < a.length; i++) {
-    if (a[i] > max) {
-      max = a[i];
-    } else {
-      continue;
-    }
+print(obj[1]);
+print(student["name"]);
+
+//
+//
+//
+
+student.gender = "Male";
+print(student);
+
+delete student.address;
+print(student);
+
+// // Nested objects
+// const classInfo = {
+//   saman: {
+//     grade: "A",
+//     country: "Nepal"
+//   },
+//   pratyush: {
+//     grade: "A",
+//     country: "Nepal"
+//   },
+//   prashanna: {
+//     grade: "A",
+//     country: "Nepal"
+//   }
+// };
+// print (classInfo);
+
+
+// Array of objects
+
+classInfo = [
+  {
+    grade: "A",
+    country: "Nepal"
+  },
+  {
+    grade: "A",
+    country: "Nepal"
+  },
+  {
+    grade: "A",
+    country: "Nepal"
   }
-  return max;
-}
-
-let arr = [5, 23, 53, 3, 78, 59, 44];
-print(largest(arr));
+];
+print (classInfo);
 
 //
 //
 //
+
