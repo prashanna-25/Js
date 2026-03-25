@@ -299,42 +299,42 @@ function print(a, b) {
 // //
 // //
 
-// Object literals
+// // Object literals
 
-const student = {
-  name: "Prashanna",
-  age: 21,
-  address: "Nepal"
-};
+// const student = {
+//   name: "Prashanna",
+//   age: 21,
+//   address: "Nepal"
+// };
 
-print(student);
+// print(student);
 
-student.name = "Prashanna Khanal";  //values can be edited or added even if object is constant
+// student.name = "Prashanna Khanal";  //values can be edited or added even if object is constant
 
 
-print (student);
+// print (student);
 
-//
-//
-//
+// //
+// //
+// //
 
-const obj = {
-  4: "a",
-  1: 'b'
-};
+// const obj = {
+//   4: "a",
+//   1: 'b'
+// };
 
-print(obj[1]);
-print(student["name"]);
+// print(obj[1]);
+// print(student["name"]);
 
-//
-//
-//
+// //
+// //
+// //
 
-student.gender = "Male";
-print(student);
+// student.gender = "Male";
+// print(student);
 
-delete student.address;
-print(student);
+// delete student.address;
+// print(student);
 
 // // Nested objects
 // const classInfo = {
@@ -379,4 +379,54 @@ print(student);
 // Math object
 
 print (Math);
-print (Math.PI)
+print (Math.PI);
+
+// //
+// //
+// //
+
+// // Generate random integer
+
+// // 0-10
+
+// let num = Math.random();
+// num *= 11;
+// num = Math.floor(num);
+// // num += 1;
+// print(num);
+
+// //
+// //
+// //
+
+// // 1-10
+
+// let num = Math.random();
+// num *= 10;
+// num = Math.floor(num);
+// num += 1;
+// print(num);
+
+// //
+// //
+// //
+
+
+// Guessing game
+
+let max = prompt("Enter Maximum number for the game:");
+let random = Math.floor(Math.random() * max) + 1;
+let guess = 0;
+
+guess = prompt("Enter your guess:");
+
+while (guess != random) {
+  if(guess < random){
+    guess = prompt(`The number is greater than ${guess} guess again:`);
+  }
+  if(guess > random){
+    guess = prompt(`The number is smaller than ${guess} guess again:`);
+  }
+} 
+
+alert("Your guess is correct..");
