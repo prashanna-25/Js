@@ -354,25 +354,29 @@ print(student);
 // print (classInfo);
 
 
-// Array of objects
+// // Array of objects
 
-classInfo = [
-  {
-    grade: "A",
-    country: "Nepal"
-  },
-  {
-    grade: "A",
-    country: "Nepal"
-  },
-  {
-    grade: "A",
-    country: "Nepal"
-  }
-];
-print (classInfo);
+// classInfo = [
+//   {
+//     grade: "A",
+//     country: "Nepal"
+//   },
+//   {
+//     grade: "A",
+//     country: "Nepal"
+//   },
+//   {
+//     grade: "A",
+//     country: "Nepal"
+//   }
+// ];
+// print (classInfo);
 
-//
-//
-//
+// //
+// //
+// //
 
+// Math object
+
+print (Math);
+print (Math.PI)
