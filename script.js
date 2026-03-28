@@ -311,7 +311,6 @@ function print(a, b) {
 
 // student.name = "Prashanna Khanal";  //values can be edited or added even if object is constant
 
-
 // print (student);
 
 // //
@@ -353,7 +352,6 @@ function print(a, b) {
 // };
 // print (classInfo);
 
-
 // // Array of objects
 
 // classInfo = [
@@ -378,8 +376,8 @@ function print(a, b) {
 
 // Math object
 
-print (Math);
-print (Math.PI);
+print(Math);
+print(Math.PI);
 
 // //
 // //
@@ -411,22 +409,56 @@ print (Math.PI);
 // //
 // //
 
+// // Guessing game
 
-// Guessing game
+// let max = prompt("Enter Maximum number for the game:");
+// let random = Math.floor(Math.random() * max) + 1;
+// let guess = 0;
 
-let max = prompt("Enter Maximum number for the game:");
-let random = Math.floor(Math.random() * max) + 1;
-let guess = 0;
+// guess = prompt("Enter your guess:");
 
-guess = prompt("Enter your guess:");
+// while (guess != random) {
+//   if (guess < random) {
+//     guess = prompt(`The number is greater than ${guess} guess again:`);
+//   }
+//   if (guess > random) {
+//     guess = prompt(`The number is smaller than ${guess} guess again:`);
+//   }
+// }
 
-while (guess != random) {
-  if(guess < random){
-    guess = prompt(`The number is greater than ${guess} guess again:`);
-  }
-  if(guess > random){
-    guess = prompt(`The number is smaller than ${guess} guess again:`);
-  }
-} 
+// alert("Your guess is correct..");
 
-alert("Your guess is correct..");
+// //
+// //
+// //
+
+// create program that generate random no. representing dice roll
+
+let roll = Math.floor(Math.random() * 6 + 1);
+print(roll);
+
+// create object representing a car that stores properties: name, model, color
+
+let car = {
+  name: "RollsRoyce",
+  model: "Phantom",
+  color: "Ash",
+};
+print(car);
+
+// create object Person with name, age, city
+// edit city to New York, add new property country and set to United States
+
+let person = {
+  name: "Prashanna Khanal",
+  age: 20,
+  city: "Kathmandu",
+};
+
+print(person);
+
+person.city = "New Yprk";
+print(person);
+
+person.country = "United States";
+print(person);
