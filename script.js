@@ -432,33 +432,57 @@ print(Math.PI);
 // //
 // //
 
-// create program that generate random no. representing dice roll
+// // create program that generate random no. representing dice roll
 
-let roll = Math.floor(Math.random() * 6 + 1);
-print(roll);
+// let roll = Math.floor(Math.random() * 6 + 1);
+// print(roll);
 
-// create object representing a car that stores properties: name, model, color
+// // create object representing a car that stores properties: name, model, color
 
-let car = {
-  name: "RollsRoyce",
-  model: "Phantom",
-  color: "Ash",
-};
-print(car);
+// let car = {
+//   name: "RollsRoyce",
+//   model: "Phantom",
+//   color: "Ash",
+// };
+// print(car);
 
-// create object Person with name, age, city
-// edit city to New York, add new property country and set to United States
+// // create object Person with name, age, city
+// // edit city to New York, add new property country and set to United States
 
-let person = {
-  name: "Prashanna Khanal",
-  age: 20,
-  city: "Kathmandu",
-};
+// let person = {
+//   name: "Prashanna Khanal",
+//   age: 20,
+//   city: "Kathmandu",
+// };
 
-print(person);
+// print(person);
 
-person.city = "New Yprk";
-print(person);
+// person.city = "New Yprk";
+// print(person);
 
-person.country = "United States";
-print(person);
+// person.country = "United States";
+// print(person);
+
+//
+//
+//
+
+// function to give average of 3 numbers
+
+function average(a, b, c) {
+  let avg = (a + b + c) / 3;
+  print(avg);
+}
+
+average(2, 4, 6);
+
+// multiplication table of a num
+
+function mulTable(num) {
+  print(`Multiplication table of ${num} is:`);
+  for (i = 1; i <= 10; i++) {
+    print(`${num} * ${i} = ${num * i}`);
+  }
+}
+
+mulTable(76);
