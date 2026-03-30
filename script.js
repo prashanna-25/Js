@@ -463,26 +463,60 @@ print(Math.PI);
 // person.country = "United States";
 // print(person);
 
+// //
+// //
+// //
+
+// // function to give average of 3 numbers
+
+// function average(a, b, c) {
+//   let avg = (a + b + c) / 3;
+//   print(avg);
+// }
+
+// average(2, 4, 6);
+
+// // multiplication table of a num
+
+// function mulTable(num) {
+//   print(`Multiplication table of ${num} is:`);
+//   for (i = 1; i <= 10; i++) {
+//     print(`${num} * ${i} = ${num * i}`);
+//   }
+// }
+
+// mulTable(76);
+
 //
 //
 //
 
-// function to give average of 3 numbers
+// factorial of n
 
-function average(a, b, c) {
-  let avg = (a + b + c) / 3;
-  print(avg);
-}
-
-average(2, 4, 6);
-
-// multiplication table of a num
-
-function mulTable(num) {
-  print(`Multiplication table of ${num} is:`);
-  for (i = 1; i <= 10; i++) {
-    print(`${num} * ${i} = ${num * i}`);
+function fact(n) {
+  let factorial = 1;
+  if (n == 0) {
+    return 1;
+  } else {
+    for (i = 0; i < n; i++) {
+      factorial *= n;
+      n--;
+    }
   }
+  return factorial;
 }
 
-mulTable(76);
+let factorial = fact(5);
+print(factorial);
+
+function concat(arr) {
+  let result = "";
+  for (i = 0; i < arr.length; i++) {
+    result += arr[i];
+  }
+  return result;
+}
+
+let arr = ["hello", "world", "!"];
+let conarr = concat(arr);
+print(conarr);
