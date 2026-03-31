@@ -487,36 +487,74 @@ print(Math.PI);
 
 // mulTable(76);
 
+// //
+// //
+// //
+
+// // factorial of n
+
+// function fact(n) {
+//   let factorial = 1;
+//   if (n == 0) {
+//     return 1;
+//   } else {
+//     for (i = 0; i < n; i++) {
+//       factorial *= n;
+//       n--;
+//     }
+//   }
+//   return factorial;
+// }
+
+// let factorial = fact(5);
+// print(factorial);
+
+// function concat(arr) {
+//   let result = "";
+//   for (i = 0; i < arr.length; i++) {
+//     result += arr[i];
+//   }
+//   return result;
+// }
+
+// let arr = ["hello", "world", "!"];
+// let conarr = concat(arr);
+// print(conarr);
+
 //
 //
 //
 
-// factorial of n
+// scope types
 
-function fact(n) {
-  let factorial = 1;
-  if (n == 0) {
-    return 1;
-  } else {
-    for (i = 0; i < n; i++) {
-      factorial *= n;
-      n--;
-    }
+let greet = "Hello"; // global scope
+
+function changeGreet() {
+  let greet = "Namaste"; // block scope
+
+  function innerGreet() {
+    print(greet); // lexical scope
   }
-  return factorial;
+  innerGreet();
 }
 
-let factorial = fact(5);
-print(factorial);
+print(greet);
+changeGreet();
 
-function concat(arr) {
-  let result = "";
-  for (i = 0; i < arr.length; i++) {
-    result += arr[i];
+//
+//
+//
+
+// Higer order function
+
+function mulFunc(func, count) {
+  for (i = 0; i < count; i++) {
+    func();
   }
-  return result;
 }
 
-let arr = ["hello", "world", "!"];
-let conarr = concat(arr);
-print(conarr);
+function greets() {
+  print("Namaste");
+}
+
+mulFunc(greets, 5);
