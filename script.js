@@ -521,40 +521,95 @@ print(Math.PI);
 // let conarr = concat(arr);
 // print(conarr);
 
+// //
+// //
+// //
+
+// // scope types
+
+// let greet = "Hello"; // global scope
+
+// function changeGreet() {
+//   let greet = "Namaste"; // block scope
+
+//   function innerGreet() {
+//     print(greet); // lexical scope
+//   }
+//   innerGreet();
+// }
+
+// print(greet);
+// changeGreet();
+
+// //
+// //
+// //
+
+// // Higer order function
+
+// function mulFunc(func, count) {
+//   for (i = 0; i < count; i++) {
+//     func();
+//   }
+// }
+
+// let greets = function () {
+//   print("Namaste");
+// };
+
+// mulFunc(greets, 5);
+
 //
 //
 //
 
-// scope types
+// higher order function
 
-let greet = "Hello"; // global scope
-
-function changeGreet() {
-  let greet = "Namaste"; // block scope
-
-  function innerGreet() {
-    print(greet); // lexical scope
+function generator(request) {
+  // function that returns another finction.
+  if (request == "odd") {
+    return function (n) {
+      print(!(n % 2 == 0));
+    };
+  } else if (request == "even") {
+    return function (n) {
+      print(n % 2 == 0);
+    };
+  } else {
+    print("invalid request");
   }
-  innerGreet();
 }
 
-print(greet);
-changeGreet();
+let odd = generator("odd");
+odd(33);
+odd(24);
+
+let even = generator("even");
+even(33);
+even(24);
 
 //
 //
 //
 
-// Higer order function
+const calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  sub: function (a, b) {
+    return a - b;
+  },
+  mul(a, b) {
+    // function keyword is not necessary insde objects
+    return a * b;
+  },
+};
 
-function mulFunc(func, count) {
-  for (i = 0; i < count; i++) {
-    func();
-  }
-}
+print(calculator.add(5, 6));
+print(calculator.sub(45, 7));
 
-function greets() {
-  print("Namaste");
-}
+calculator.div = function (a, b) {
+  return a / b;
+};
 
-mulFunc(greets, 5);
+print(calculator.div(42, 7));
